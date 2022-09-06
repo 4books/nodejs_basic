@@ -30,3 +30,24 @@ setTimeout(run, 5000);
 //왜 Promise가 더 먼저 실행될까?
 //micro task와 macro task의 차이를 알면 된다
 
+const relationship1 = {
+    name: 'zero',
+    friends: ['nero', 'hero', 'xero'],
+    logFriends: function () {
+        const that = this;
+        this.friends.forEach(function (friend) {
+            console.log(that.name, friend);
+        });
+    }
+};
+const relationship2 = {
+    name: 'zero',
+    friends: ['nero', 'hero', 'xero'],
+    logFriends() {
+        this.friends.forEach(friend => {
+            console.log(this.name, friend);
+        })
+    },
+};
+relationship1.logFriends();
+relationship2.logFriends();
