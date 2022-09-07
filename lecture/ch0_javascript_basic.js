@@ -51,3 +51,23 @@ const relationship2 = {
 };
 relationship1.logFriends();
 relationship2.logFriends();
+
+
+//비구조화란?
+const example = {a: 123, b: {c: 135, d: 146}};
+// const a = old_example.a;
+// const d = old_example.b.d;
+//위에는 구조화 방식
+
+//비구조화 할당
+const {a, b: {d}} = example;
+console.log(a);
+console.log(d);
+
+//Array도 가능하다!
+arr = [1, 2, 3, 4, 5];
+const [x, y, , , z] = arr;
+console.log(x);
+console.log(y);
+console.log(z);
+
