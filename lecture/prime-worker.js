@@ -36,10 +36,9 @@ if (isMainThread) {
     }
     threads.add(new Worker(__filename,
         {
-            workerData:
-                {
-                    start, range: range + ((max - min + 1) % threadCount)
-                }
+            workerData: {
+                start, range: range + ((max - min + 1) % threadCount)
+            }
         }
     ));
     for (let worker of threads) {

@@ -5,6 +5,6 @@ for (let i = 0; i < 10_000_000_000; i++) {
 }
 console.timeEnd('speed');
 
-//m1 맥북 에어 speed: 482.906ms
+//m1 맥북 에어 speed: 8.577s
 //i7 8700k speed: 8.592s
-//
+//비슷한데?
