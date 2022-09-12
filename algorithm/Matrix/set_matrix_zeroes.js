@@ -1,5 +1,3 @@
-const expected = require('../jsUnit');
-
 var setZeroes = function (matrix) {
     const zeroes = [];
 
@@ -25,8 +23,4 @@ var setZeroes = function (matrix) {
     return matrix;
 };
 
-let matrix = [[0, 1, 2, 0], [3, 4, 5, 2], [1, 3, 1, 5]]
-let zeroes = setZeroes(matrix);
-
-expected(zeroes).tobe([[0,0,0,0],[0,4,5,0],[0,3,1,0]]);
-
+module.exports = setZeroes;
